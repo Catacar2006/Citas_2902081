@@ -31,6 +31,10 @@ public class Main {
      //recorrer los procedimeintos de enfermero1
     for(String p: enfermero1.getProcedimientos()){
         System.out.println("Procedimiento:" + p);
+
+    //Crear 
+
+
     }
 
      

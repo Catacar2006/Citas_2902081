@@ -14,6 +14,13 @@ public class Medico extends Usuario{
     private Long registroMedico;
     private Especialidad especialidad;
 
+    
+
+    @Override
+    public String toString() {
+        return "Medico [registroMedico=" + registroMedico + ", especialidad=" + especialidad + ", nombre:" + super.nombres + super.apllidos + super.id + "]";
+    }
+
     // constructor defecto
     public Medico(int id, String nombres, String apllidos, TipoDocumento tipoIdentificacion, Long numeroDocumento, Long registroMedico, Especialidad especialidad) {
         //si quieres instanciar un medico 

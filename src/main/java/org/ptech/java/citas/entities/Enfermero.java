@@ -6,6 +6,13 @@ import org.ptech.java.citas.entities.enums.TipoDocumento;
 public class Enfermero extends Usuario {
     private List<String> procedimientos;
 
+    
+
+    @Override
+    public String toString() {
+        return "Enfermero [procedimientos=" + procedimientos + super.id + "|" + super.nombres + "|" + super.apllidos +"]";
+    }
+
     public Enfermero(int id, String nombres, String apllidos, TipoDocumento tipoIdentificacion, Long numeroDocumento) {
         //1.llamar al constructor de la super clase
         super(id, nombres, apllidos, tipoIdentificacion, numeroDocumento);

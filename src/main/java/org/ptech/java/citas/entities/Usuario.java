@@ -8,7 +8,7 @@ import org.ptech.java.citas.entities.enums.TipoDocumento;
     
 
 
-public abstract class Usuario {
+public  class Usuario {
 
         // atributos  protegidos
         //deben ser protegido
@@ -17,6 +17,11 @@ public abstract class Usuario {
     protected String apllidos;
     protected TipoDocumento tipoIdentificacion;
     protected Long numeroDocumento;
+
+    //Sobreescribir el metodo toString
+    public String toString(){
+        return "nombre:" + this.nombres;
+    }
 
     //Constructor parametrizado
     public Usuario(int id, String nombres, String apllidos, TipoDocumento tipoIdentificacion, Long numeroDocumento) {
