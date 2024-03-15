@@ -9,16 +9,18 @@ public class Cita {
      int id;
      LocalDateTime fecha;
      Consultorio consultorio;
-     Paciente paciente;
+     
 
-    public Cita(int id, LocalDateTime fecha, Paciente paciente ,Consultorio consultorio) {
+   
+
+    
+
+    public Cita(int id, LocalDateTime fecha, Consultorio consultorio) {
         this.id = id;
         this.fecha = fecha;
         this.consultorio = consultorio;
-        this.paciente = paciente;
     }
 
-    
 
     public int getId() {
         return id;
@@ -50,16 +52,6 @@ public class Cita {
     }
 
 
-
-    public Paciente getPaciente() {
-        return paciente;
-    }
-
-
-
-    public void setPaciente(Paciente paciente) {
-        this.paciente = paciente;
-    }
     
     
     
